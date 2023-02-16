@@ -29,7 +29,8 @@ price = co.total
 
 Using ruby, node, go or JAVA, implement a checkout process that fulfills the requirements.
 
-```Items: APE, PUNK, MEEBIT
+```
+Items: APE, PUNK, MEEBIT
 Total: 139 ETH
 
 Items: APE, PUNK, APE
