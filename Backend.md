@@ -1,6 +1,6 @@
-# Fuul Code Challenge
+# Fuul Backend Code Challenge
 
-#### Fuul is helping one of their projects that runs an NFT marketplace which sells (only) 3 products:
+Fuul is helping one of their projects that runs an NFT marketplace which sells (only) 3 products:
 
 
 ```
