@@ -8,7 +8,6 @@ With the idea to increase the number of active referrers, when a user performs a
 
 The task is to build an SDK and a website that uses it, where users connect their wallet, perform an action and are then shown the modal.
 
-
 ## Deliverables
 
 The code should:
@@ -21,13 +20,12 @@ A stand-alone package that can be imported in any React project (for the purpose
 
 It should include:
 * An export named `Fuul` which exposes 2 methods: `init` and `showReferralModal`
-* The `init` method takes an `apiKey` that identifies the `project` and calls a mocked API to get the project information
-* Project information will be: project name, ???
-* It should be easy for anyone using this package to call `init()` once in the lifetime of the React app and be able to call `showReferralModal` thereafter anywhere on their app
+* The `init` method takes an `apiKey` that identifies the `project` and calls a mocked API to get the project information from Fuul. Feel free to include the information that you think is relevant to show to the user in the modal. Assume that projects are able to define this data on the Fuul app modal editor.
+* The SDK should be as easy to setup on the client app as possible
 
 The modal should include:
 * A tracking link identifying the user. Something like `https://app.fuul.xyz/?referrer={connectedAddress}` (using the address that is connected to the site)
-* The project information obtained from the mocked API call (Feel free to add the information that you think is relevant to show to the user)
+* The project information obtained from the mocked API call
 * If possible, try to use standard html and/or plain javascript for the modal component
   
 ### Website
@@ -35,4 +33,4 @@ The website will import the SDK package locally (`npm install ./sdk` or whatever
 
 It should include:
 * A "connect wallet" button (you can use any type of wallet or provider)
-* A "perform action" button (let's call it mint, trade, deposit, or any onchain action that you want). This button should prompt the user to sign a message using their wallet and then trigger the referral modal.
+* A "perform action" button (let's call it mint, trade, deposit, or any onchain action that you want). This button should prompt the user to sign a message using their wallet and then trigger the referral modal
