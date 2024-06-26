@@ -4,10 +4,10 @@ Fuul provides a React components SDK for clients to implement on their website.
 
 With the idea to increase the number of active referrers, once a user performs a certain event on the app, crypto projects insert a modal inciting the user to refer others and earn commissions.
 
-The task is to build a generic website (or blank) where users connect their wallet, perform the action and then trigger this modal. The modal component should be imported from a local NPM package.
+The task is to build a generic website (or blank) where users connect their wallet, perform the action and then see this modal. The modal component should be imported from a local NPM package.
 
 #### The SDK package should include:
-* 1 exported class named "Fuul" which exposes only 2 methods: `init` and `showReferralModal`
+* An exported class named "Fuul" which exposes only 2 methods: `init` and `showReferralModal`
 * The `init` takes only the `apiKey` argument, gets the project information from a mocked API call and exposes it to all methods.
 
 #### The website should include:
