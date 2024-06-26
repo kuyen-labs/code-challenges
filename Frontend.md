@@ -1,25 +1,38 @@
 # Fuul Frontend Code Challenge
 
-Fuul provides a React components SDK for clients to implement on their website. 
+Fuul provides an SDK for clients to implement on their React websites. 
 
-With the idea to increase the number of active referrers, once a user performs a certain event on the app, crypto projects insert a modal inciting the user to refer others and earn commissions.
+With the idea to increase the number of active referrers, when a user performs a certain action on the app, a modal is shown inciting the user to refer others and earn commissions.
 
-The task is to build a generic website (or blank) where users connect their wallet, perform the action and then see this modal. The modal component should be imported from a local NPM package.
+## Objective
 
-#### The SDK package should include:
-* An exported class named "Fuul" which exposes only 2 methods: `init` and `showReferralModal`
-* The `init` takes only the `apiKey` argument, gets the project information from a mocked API call and exposes it to all methods.
+The task is to build an SDK and a website that uses it, where users connect their wallet, perform an action and are then shown the modal.
 
-#### The website should include:
-* A connect wallet button. You can use any type of wallet or provider.
+
+## Deliverables
+
+The code should:
+* Be written in Typescript
+* Be structured using all best-practices you know
+* Be easy to evolve and add new functionality
+
+### SDK package
+A stand-alone package that can be imported in any React project (for the purposes of this challenge there is no need to host it anywhere).
+
+It should include:
+* An export named `Fuul` which exposes 2 methods: `init` and `showReferralModal`
+* The `init` method takes an `apiKey` that identifies the `project` and calls a mocked API to get the project information
+* Project information will be: project name, ???
+* It should be easy for anyone using this package to call `init()` once in the lifetime of the React app and be able to call `showReferralModal` thereafter anywhere on their app
+
+The modal should include:
+* A tracking link identifying the user. Something like `https://app.fuul.xyz/?referrer={connectedAddress}` (using the address that is connected to the site)
+* The project information obtained from the mocked API call (Feel free to add the information that you think is relevant to show to the user)
+* If possible, try to use standard html and/or plain javascript for the modal component
+  
+### Website
+The website will import the SDK package locally (`npm install ./sdk` or whatever directory you decide to put it in)
+
+It should include:
+* A "connect wallet" button (you can use any type of wallet or provider)
 * A "perform action" button (let's call it mint, trade, deposit, or any onchain action that you want). This button should prompt the user to sign a message using their wallet and then trigger the referral modal.
-
-#### The modal should include:
-* The user's tracking link. The tracking link must be something like `https://app.fuul.xyz/?referrer={connectedAddress}` using the address that is connected to the site.
-* The necessary project information from the mocked api call. Feel free to add the information that you think is relevant to show the user.
-
-#### The code should:
-* Be written as production-ready code. You will write production code.
-* Be easy to grow and easy to add new functionality.
-* The code should be written in Typescript.
-* If possible, try to use standard html and/or plain javascript for the modal component.
