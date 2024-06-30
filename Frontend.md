@@ -24,7 +24,7 @@ It should include:
 * The SDK should be as easy to setup on the client app as possible
 
 The modal should include:
-* A tracking link identifying the user. Something like `https://app.fuul.xyz/?referrer={connectedAddress}` (using the address that is connected to the site)
+* A tracking link identifying the user. Something like `{hostedURL}/?referrer={connectedAddress}` (using the hosted URL from your site and the address that is connected)
 * The project information obtained from the mocked API call
 * If possible, try to use standard html and/or plain javascript for the modal component
   
