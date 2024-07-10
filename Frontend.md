@@ -22,7 +22,7 @@ A stand-alone package that can be imported in any React project (for the purpose
 
 It should include:
 * An export named `Fuul` which exposes 2 methods: `init` and `showReferralModal`
-* The `init` method takes an `apiKey` that identifies the `project` and calls a mocked API to get the project information from Fuul. Feel free to include the information that you think is relevant to show to the user in the modal. Assume that projects are able to define this data on the Fuul app modal editor.
+* The `init` method takes an `apiKey` that identifies the `project` and calls a mocked API to get the project information from Fuul. Feel free to include the information that you think is relevant to show to the user in the modal.
 * The SDK should be as easy to setup on the client app as possible
 
 The modal should include:
