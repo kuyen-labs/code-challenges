@@ -2,8 +2,7 @@
 
 Fuul provides an SDK for clients to implement on their React websites. 
 
-With the idea to increase the number of active referrers, when a user performs a certain action on the app, a modal is shown encouraging the user to refer others and earn commissions.
-
+To increase the number of referrers, a modal appears right after users convert on the app, encouraging them to refer others and earn commissions.
 
 ## Objective
 
