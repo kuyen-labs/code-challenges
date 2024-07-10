@@ -9,7 +9,7 @@ With the idea to increase the number of active referrers, when a user performs a
 
 The task is to build an SDK and a website that uses it, where users connect their wallet, perform an action and are then shown the modal.
 
-The objective of the modal is to encourage users to refer others. So it should include all necessary information and tools to convince users to share, including their personalized tracking link.
+The objective of the modal is to encourage users to refer others. So it should include the necessary information and tools to convince users to share, including their personalized tracking link.
 
 ## Deliverables
 
