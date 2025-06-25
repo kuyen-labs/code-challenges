@@ -20,12 +20,12 @@ The marketplace currently sells 3 NFT products with the following base prices:
 
 The marketplace offers two types of discounts:
 
-### 1. 2-for-1 Promotion (Marketing Department)
+### 1. 2-for-1 Promotion
 - **Product:** APE
 - **Rule:** Buy 2 APE, get 1 APE for free
 - **Example:** 3 APE items = 2 × 75 ETH = 150 ETH (instead of 3 × 75 ETH = 225 ETH)
 
-### 2. Bulk Purchase Discount (CFO)
+### 2. Bulk Purchase Discount
 - **Product:** PUNK items only
 - **Rule:** Buy 3 or more PUNK items, price per unit reduces 20%
 - **Example:** 4 PUNK items = 4 × 48 ETH = 192 ETH (instead of 4 × 60 ETH = 240 ETH)
