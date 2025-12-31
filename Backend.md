@@ -58,7 +58,7 @@ Items: APE, PUNK, MEEBIT
 Total: 139 ETH
 
 Items: APE, PUNK, APE
-Total: 135 ETH
+Total: 210 ETH
 
 Items: PUNK, PUNK, PUNK, APE, PUNK
 Total: 267 ETH
