@@ -34,31 +34,31 @@ The marketplace offers two types of discounts:
 
 The checkout process should allow items to be scanned in any order and return the total amount to be paid.
 
-### Example Usage (Ruby)
+### Example Usage
 
-```ruby
-# Initialize checkout with pricing rules
-co = Checkout.new(pricing_rules)
+```typescript
+// Initialize checkout with pricing rules
+const co = new Checkout(pricingRules);
 
-# Scan items in any order
-co.scan("APE")
-co.scan("APE") 
-co.scan("PUNK")
+// Scan items in any order
+co.scan("APE");
+co.scan("APE");
+co.scan("PUNK");
 
-# Get total price
-price = co.total
+// Get total price
+const price = co.total();
 ```
 
 ## The Program
 
-Using ruby, node, go or JAVA, implement a checkout process that fulfills the requirements.
+Using typescript, implement a checkout process that fulfills the requirements.
 
 ```
 Items: APE, PUNK, MEEBIT
 Total: 139 ETH
 
 Items: APE, PUNK, APE
-Total: 135 ETH
+Total: 210 ETH
 
 Items: PUNK, PUNK, PUNK, APE, PUNK
 Total: 267 ETH
